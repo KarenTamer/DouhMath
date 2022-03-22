@@ -8,15 +8,25 @@
     tools:context=".SegGrad">
 
     <Button
-        android:id="@+id/bLimpiar"
-        android:layout_width="151dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="44dp"
-        android:text="Limpiar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toEndOf="@+id/bResolver"
-        app:layout_constraintTop_toBottomOf="@+id/txtC"
+        android:id="@+id/button3"
+        android:layout_width="131dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#ADFF3333"
+        android:text="Valor B:"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="131dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#ADFF3333"
+        android:text="Valor C:"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        tools:layout_editor_absoluteX="0dp"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -51,11 +61,12 @@
         android:id="@+id/txtC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="48dp"
+        android:background="#9EE4D6D6"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Valor de c:"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.825"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtB"
         tools:ignore="MissingConstraints" />
@@ -64,11 +75,12 @@
         android:id="@+id/txtB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="48dp"
+        android:background="#9EE4D6D6"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Valor de b:"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.825"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtA"
         tools:ignore="MissingConstraints" />
@@ -78,21 +90,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:background="#9EE4D6D6"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Valor de a:"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.825"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTitulo"
         tools:ignore="MissingConstraints" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
-        android:layout_width="341dp"
-        android:layout_height="148dp"
+        android:layout_width="335dp"
+        android:layout_height="119dp"
         android:layout_marginBottom="44dp"
         android:background="@color/Rojo"
-        app:cardBackgroundColor="@color/GrisClaro"
+        app:cardBackgroundColor="#D57448"
         app:layout_constraintBottom_toTopOf="@+id/bRegresarSeg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -102,8 +115,8 @@
 
         <EditText
             android:id="@+id/txtResultado"
-            android:layout_width="229dp"
-            android:layout_height="75dp"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="Resultado:" />
@@ -113,13 +126,23 @@
         android:id="@+id/bResolver"
         android:layout_width="151dp"
         android:layout_height="62dp"
-        android:layout_marginStart="40dp"
         android:layout_marginBottom="308dp"
         android:text="Resolver"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtC"
-        app:layout_constraintVertical_bias="0.977"
+        app:layout_constraintVertical_bias="0.875"
         tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="131dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="112dp"
+        android:backgroundTint="#ADFF3333"
+        android:text="Valor A:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

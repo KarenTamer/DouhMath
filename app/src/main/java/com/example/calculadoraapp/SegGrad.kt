@@ -1,5 +1,6 @@
 package com.example.calculadoraapp
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -12,44 +13,41 @@ class SegGrad : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_seg_grad)
 
-        var a: Double
-        var b: Double
-        var c: Double
+        val bRegresarSeg = findViewById<Button>(R.id.bRegresarSeg)
+        var valorA: Double
+        var valorB: Double
+        var valorC: Double
         var x1: Double
         var x2: Double
-        val bRegresarSeg = findViewById<Button>(R.id.bRegresarSeg)
-
-
         var txtA = findViewById<EditText>(R.id.txtA)
         var txtB = findViewById<EditText>(R.id.txtB)
         var txtC = findViewById<EditText>(R.id.txtC)
         var bResolver = findViewById<Button>(R.id.bResolver)
 
-
-        var txtTitulo = findViewById<TextView>(R.id.txtTitulo)
-
         var txtResultado = findViewById<EditText>(R.id.txtResultado)
 
         bResolver.setOnClickListener {
-            a = txtA.text.toString().toDouble()
-            b = txtB.text.toString().toDouble()
-            c = txtC.text.toString().toDouble()
-            var resul1 = ((b * b) - 4 * (a * c))
+            valorA = txtA.text.toString().toDouble()
+            valorB = txtB.text.toString().toDouble()
+            valorC = txtC.text.toString().toDouble()
+            var resul1 = ((valorB * valorB) - 4 * ( valorA* valorC))
             if (resul1 < 0) {
-                Toast.makeText(this, "No se puede porque es 0", Toast.LENGTH_SHORT).show()
+                txtResultado.setText("No se puede realizar porque los valores dan como resultado un numero negativo")
             } else if (resul1 === 0.0) {
-                x1 = (-b) / (2 * a)
+
+                x1 = (-valorB) / (2 * valorA)
                 x2 = x1
-            } else if (resul1 > 0.0) {
-                x1 = (-b + Math.sqrt(resul1)) / (2 * a)
-                x2 = (-b - Math.sqrt(resul1)) / (2 * a)
                 var rounded=String.format("%.2f",x1)
                 var rounded1=String.format("%.2f",x2)
-
                 txtResultado.setText("x1=$rounded \n x2=$rounded1")
 
+            } else if (resul1 > 0.0) {
+                x1 = (-valorB + Math.sqrt(resul1)) / (2 * valorA)
+                x2 = (-valorB - Math.sqrt(resul1)) / (2 * valorA)
+                var rounded=String.format("%.2f",x1)
+                var rounded1=String.format("%.2f",x2)
+                txtResultado.setText("x1=$rounded \n x2=$rounded1")
             }
-
         }
 
         bRegresarSeg.setOnClickListener {

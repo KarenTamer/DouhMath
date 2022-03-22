@@ -5,19 +5,259 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_dos"
-    tools:context=".PrimGrad">
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    tools:context=".PrimGrad"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
+
+
+    <TextView
+        android:id="@+id/txtTitulo2"
+        android:layout_width="413dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Por favor, ingrese los valores correspondientes"
+        android:textAlignment="center"
+        android:textColor="@color/RojoFuerte"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/bRegresarPrim"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
         android:text="REGRESAR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976"
-        android:backgroundTint="@color/black"/>
+        app:layout_constraintVertical_bias="0.947" />
+
+    <Button
+        android:id="@+id/bResolverPrimGrad"
+        android:layout_width="151dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="268dp"
+        android:text="Resolver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo2"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txtA2"
+        android:layout_width="97dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="24dp"
+        android:background="#9EE4D6D6"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/txtB1"
+        android:layout_width="99dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="#9EE4D6D6"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/button7"
+        app:layout_constraintTop_toBottomOf="@+id/txtA1"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txtC1"
+        android:layout_width="99dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="#9EE4D6D6"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/button9"
+        app:layout_constraintTop_toBottomOf="@+id/txtB1"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="63dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#ADFF3333"
+        android:text="C1:"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button7"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="63dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#ADFF3333"
+        android:text="B1:"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="63dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="124dp"
+        android:backgroundTint="#ADFF3333"
+        android:text="A1:"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtA1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="63dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="#ADFF3333"
+        android:text="A2:"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtA2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="63dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#ADFF3333"
+        android:text="B2:"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtB2"
+        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintStart_toEndOf="@+id/txtB1"
+        app:layout_constraintTop_toBottomOf="@+id/button12"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="63dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#ADFF3333"
+        android:text="C2:"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtC2"
+        app:layout_constraintHorizontal_bias="0.677"
+        app:layout_constraintStart_toEndOf="@+id/txtC1"
+        app:layout_constraintTop_toBottomOf="@+id/button10"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txtC2"
+        android:layout_width="99dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="#9EE4D6D6"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtB2"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txtB2"
+        android:layout_width="99dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="#9EE4D6D6"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtA2"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/txtA1"
+        android:layout_width="98dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="20dp"
+        android:background="#9EE4D6D6"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/button12"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="408dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="68dp"
+        android:background="#81AE7575"
+        android:fontFamily="sans-serif-black"
+        android:paddingTop="3dp"
+        android:text="RESULTADO:"
+        android:textAlignment="center"
+        android:textColor="@color/RojoFuerte"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.404"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bResolverPrimGrad" />
+
+    <TextView
+        android:id="@+id/txtX"
+        android:layout_width="150dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="116dp"
+        android:background="#D57448"
+        android:paddingTop="10dp"
+        android:text="X="
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtY"
+        app:layout_constraintHorizontal_bias="0.408"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtY"
+        android:layout_width="140dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="116dp"
+        android:background="#D57448"
+        android:paddingTop="10dp"
+        android:text="Y="
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

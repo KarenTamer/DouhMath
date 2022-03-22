@@ -3,11 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/karen/AndroidStudioProjects/CalculadoraApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/karen/AndroidStudioProjects/CalculadoraApp/app/src/main/res/layout/activity_prim_grad.xml" value="0.16621376811594202" />
-        <entry key="..\:/Users/karen/AndroidStudioProjects/CalculadoraApp/app/src/main/res/layout/activity_seg_grad.xml" value="0.22" />
-        <entry key="..\:/Users/karen/AndroidStudioProjects/CalculadoraApp/app/src/main/res/layout/activity_sorry.xml" value="0.16621376811594202" />
-        <entry key="..\:/Users/karen/AndroidStudioProjects/CalculadoraApp/app/src/main/res/layout/activity_tipo_ecuacion.xml" value="0.21" />
+        <entry key="..\:/Users/karen/AndroidStudioProjects/CalculadoraApp/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/karen/AndroidStudioProjects/CalculadoraApp/app/src/main/res/layout/activity_prim_grad.xml" value="0.2" />
+        <entry key="..\:/Users/karen/AndroidStudioProjects/CalculadoraApp/app/src/main/res/layout/activity_seg_grad.xml" value="0.25" />
+        <entry key="..\:/Users/karen/AndroidStudioProjects/CalculadoraApp/app/src/main/res/layout/activity_sorry.xml" value="0.25" />
+        <entry key="..\:/Users/karen/AndroidStudioProjects/CalculadoraApp/app/src/main/res/layout/activity_tipo_ecuacion.xml" value="0.25" />
       </map>
     </option>
   </component>
